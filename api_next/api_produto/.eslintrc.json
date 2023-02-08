@@ -1,0 +1,171 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "testing-library",
+    "jest-dom",
+    "prettier",
+    "prefer-arrow",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "global-require": "off", // Habilita o require global para alguns casos específicos de uso
+    "no-else-return": "off",
+    "no-dupe-else-if": "off",
+    "no-lonely-if": "off",
+    "elseif-without-else": "off",
+    "no-unneeded-ternary": "off",
+    "prefer-arrow/prefer-arrow-functions": [
+      "off",
+      {
+        "disallowPrototype": true,
+        "singleReturnOnly": false,
+        "classPropertiesAllowed": false
+      }
+    ],
+    "eol-last": "warn", // Adiciona uma nova linha em branco no final do código
+    "import/newline-after-import": "warn", // Adiciona uma nova linha em branco no final do último import
+    "react/jsx-curly-brace-presence": "warn", // Remove chaves {} desnecessárias em strings/props
+    "space-unary-ops": "warn", // Adiciona espaçamento entre palavras
+    "function-paren-newline": "off", // Adiciona quebras de linha dentro de parênteses/parâmetros
+    "linebreak-style": "warn", // Padroniza as quebras de linha para devs usando windows, mac ou linux,
+    "comma-dangle": ["off"],
+    "arrow-body-style": "off",
+    "no-alert": "off",
+    "radix": "off",
+    "func-style": ["off", "expression", { "allowArrowFunctions": true }],
+    "prefer-arrow-callback": ["off", { "allowNamedFunctions": true }],
+    "default-case": "off",
+    "no-prototype-builtins": "off",
+    "react/jsx-key": "off",
+    "prefer-const": "off",
+    "no-plusplus": "off",
+    "import/no-named-as-default-member": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "no-return-assign": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/display-name": "off",
+    "react/button-has-type": "off",
+    "react/no-unused-state": "off",
+    "indent": "off",
+    "no-trailing-spaces": "off",
+    "space-in-brackets": "off",
+    "spaced-comment": "off",
+    "react/destructuring-assignment": "off",
+    "prefer-destructuring": "off",
+    "func-names": "off",
+    "react/state-in-constructor": "off",
+    "react/self-closing-comp": "off",
+    "spaced-line-comment": "off",
+    "react/jsx-no-constructed-context-values": "off",
+    "react/function-component-definition": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "react/no-unused-prop-types": "off",
+    "no-empty": "off",
+    "import/no-relative-packages": "off",
+    "import/no-named-default": "off",
+    "import/no-self-import": "off",
+    "import/no-duplicates": "off",
+    "import/no-named-as-default": "off",
+    "import/no-useless-path-segments": "off",
+    "import/no-cycle": "off",
+    "no-param-reassign": "off",
+    "no-nested-ternary": "off",
+    "no-underscore-dangle": "off",
+    "react/jsx-no-bind": "off",
+    "consistent-return": "off",
+    "import/export": "off",
+    "react/no-unstable-nested-components": "off",
+    "prefer-regex-literals": "off",
+    "import/order": "off",
+    "import/prefer-default-export": "off", // Se o arquivo tiver um único export, troca para export default
+    "import/no-extraneous-dependencies": [
+      "off",
+      {
+        "devDependencies": true,
+        "optionalDependencies": true,
+        "peerDependencies": false
+      }
+    ],
+    "no-use-before-define": "off",
+    "no-console": "off",
+    "no-debugger": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" } ],
+    "vars-on-top": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".js", ".jsx", ".tsx", ".ts"] }
+    ],
+    "react/prop-types": "off",
+    "react/no-array-index-key": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "use-isnan": "off",
+    "prefer-template": "off",
+    "no-extra-semi": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/no-unused-expressions": [
+      "off",
+      { "allowTaggedTemplates": true } // Permite o uso de varíaveis não declaradas em arquivos de estilo (styled-components)
+    ],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "off",
+      { "varsIgnorePattern": "LoggerHelper", "args": "none" }
+    ],
+    "@typescript-eslint/prefer-optional-chain": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/ban-ts-comment": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.stories.*"],
+      "rules": {
+        "import/no-anonymous-default-export": "off"
+      }
+    }
+  ],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}

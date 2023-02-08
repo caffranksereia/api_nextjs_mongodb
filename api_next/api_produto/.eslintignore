@@ -1,0 +1,9 @@
+/build
+/config
+node_modules
+/public
+/scripts
+/src/react-app-env.d.ts
+/src/**/*.test.*
+coverage
+update-build.js
