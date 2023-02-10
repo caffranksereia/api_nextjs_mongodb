@@ -1,5 +1,5 @@
 module.exports = {
-    "env": {
+  "env": {
         "browser": true,
         "es2021": true,
         "node": true
@@ -8,7 +8,8 @@ module.exports = {
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:react-hooks/recommended"
+        "plugin:react-hooks/recommended",
+        "plugin: prettier/recommended"
     ],
     "overrides": [
     ],
@@ -21,6 +22,11 @@ module.exports = {
         "react",
         "@typescript-eslint"
     ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
     "rules": {
       '@typescript-eslint/explicit-boundary-types':'off',
       'react/react-in-jsx-scope':'off'

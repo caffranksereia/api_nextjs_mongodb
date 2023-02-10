@@ -12,7 +12,7 @@ export const getToken = async({
     refresh: string;
     access: string
   }>(
-    "/getToken",
+    "v1/getToken",
     {email,password},
     {
       headers: {"Content-Type": "application/json" }

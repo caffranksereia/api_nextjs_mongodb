@@ -1,5 +1,5 @@
 import { IrrobaApi } from "./api";
-import { Product } from "../interfaces/product.interfaces";
+import { Product } from "../../interfaces/product.interfaces";
 import {ErrorHandlerFunction} from "./helpers.services";
 
 export type infoData ={

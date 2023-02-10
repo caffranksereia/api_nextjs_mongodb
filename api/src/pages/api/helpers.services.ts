@@ -1,5 +1,5 @@
 import { ResponseType } from "axios";
-import { ProductError } from "../interfaces";
+import { ProductError } from "../../interfaces";
 
 export const ErrorHandlerFunction = (err: any) => {
   if (err instanceof Error) {
